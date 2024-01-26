@@ -1,0 +1,18 @@
+.visually-hidden {
+	position: absolute;
+	left: -10000;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+
+.section {
+	padding: 48px 0;
+}
+.container {
+	width: 100%;
+	max-width: 1288px;
+	margin: 0 auto;
+	padding: 0 24px;
+}

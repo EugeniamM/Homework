@@ -1,0 +1,138 @@
+* {
+	box-sizing: border-box;
+}
+
+.transformParent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 32px;
+
+	border: 1px dotted black;
+	padding: 30px;
+	margin-top: 96px;
+	margin-bottom: 96px;
+}
+.transformItem {
+	display: flex;
+	color: white;
+	align-items: center;
+	justify-content: center;
+}
+.newRed {
+	width: 150px;
+	height: 150px;
+	background-color: red;
+	/* transform: translate(0px, 0px); */
+	/* transition-property: background-color; */
+	/* transition-property: transform;
+	transition-duration: 1s; */
+	/* transition-timing-function: ease-in-out; */
+	/* transition-timing-function: cubic-bezier(0.01, 1.69, 0.94, -1.6); */
+	transition-timing-function: ease-in-out;
+}
+.newRed:hover {
+	/* background-color: rgb(111, 0, 255); */
+	/* transform: translate(0px, 500px); */
+
+	transition: scale(1.5) 1s ease-in-out;
+}
+
+.newGreen {
+	width: 150px;
+	height: 150px;
+	background-color: green;
+	/* transform: rotate(30deg); */
+	/* transition: background-color 1s ease-in-out; */
+	/* animation-name: spinGreen;
+	animation-duration: 1s; */
+	/* animation-delay: 3s; */
+	/* animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out; */
+	animation: spinGreen 1s ease-in-out infinite;
+}
+
+@keyframes spinGreen {
+	/* from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	} */
+
+	0% {
+		transform: rotate(0);
+		/* background-color: teal; */
+	}
+	50% {
+		transform: rotate(10deg);
+		/* background-color: blue; */
+	}
+	100% {
+		transform: rotate(360deg);
+		/* background-color: blueviolet; */
+	}
+}
+
+.newBlue {
+	width: 150px;
+	height: 150px;
+	background-color: blue;
+	transform: scale(1.5);
+}
+.newOrange {
+	width: 150px;
+	height: 150px;
+	background-color: orange;
+	transform: skew(20deg, 20deg);
+}
+
+.container {
+	border: 1px dotted black;
+	padding: 30px;
+}
+.parent {
+	border: 1px dotted black;
+	padding: 20px;
+	position: relative;
+}
+.item {
+	display: block;
+}
+.item.red {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	background-color: red;
+	top: 20px;
+	left: 50px;
+	overflow-x: auto;
+}
+
+.item.green {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	opacity: 0.5;
+}
+
+.item.blue {
+	width: 50px;
+	height: 50px;
+	background-color: blue;
+	position: fixed;
+}
+.section {
+	border: 1px dotted black;
+	padding: 20px;
+	background-color: wheat;
+}
+.section-title {
+	padding: 20px;
+	position: sticky;
+	top: 0px;
+	background-color: burlywood;
+}

@@ -1,0 +1,21 @@
+/* button */
+.button-primary {
+	border-radius: 8px;
+	border: 2px solid var(--color-brand-normal);
+	background: var(--color-brand-normal);
+	padding: 16px 32px;
+	color: var(--color-primary-light);
+	font-weight: 600;
+}
+
+.button-primary:hover {
+	background: transparent;
+	color: var(--color-brand-dark);
+	cursor: pointer;
+}
+.button-primary:disabled {
+	color: var(--color-primary-light);
+	background: var(--color-brand-light);
+	border-color: var(--color-brand-light);
+	cursor: not-allowed;
+}

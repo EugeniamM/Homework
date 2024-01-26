@@ -1,0 +1,12 @@
+/* links */
+.link {
+	color: var(--color-primary-light);
+	text-align: center;
+	text-decoration: none;
+	transition: color 0.3s;
+	/* display: inline; */
+}
+.link:hover {
+	color: var(--color-brand-normal);
+	/* font-weight: 600; */
+}

@@ -1,0 +1,29 @@
+/* hero section*/
+.hero-title {
+	color: var(--color-primary-light);
+	font-size: 128px;
+	font-weight: 900;
+	text-align: center;
+	margin-bottom: 0;
+}
+.hero-title .accent {
+	color: var(--color-brand-normal);
+}
+
+.hero-section {
+	padding: 272px 0px;
+	background-image: linear-gradient(
+			103deg,
+			rgba(18, 18, 17, 0.78) 2.03%,
+			rgba(18, 18, 17, 0.6) 58.46%,
+			rgba(18, 18, 17, 0) 90.36%
+		),
+		URL("../images/hero_section_background.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #ffa541;
+	/* border-radius: 16px; */
+	/* background: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261a 100%); */
+}
